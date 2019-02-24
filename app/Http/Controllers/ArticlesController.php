@@ -29,6 +29,7 @@ class ArticlesController extends Controller
 
     public function edit_article_form($id)
     {
+
         $article = Articles::find($id);
         return view('pages/add-update-article', $article)->with('article', $article);
     }
@@ -36,8 +37,10 @@ class ArticlesController extends Controller
     public function update_article_record(Request $request)
     {
         $article = Articles::find($request->id);
-        $article->title = $request->title;
-        $article->content = $request->content;
+        $article->title = trim($request->title);
+
+        $article->content = trim($request->content);
+
         $article->save();
         return redirect('articles');
     }

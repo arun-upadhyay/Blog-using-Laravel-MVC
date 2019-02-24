@@ -7,7 +7,7 @@
             <li class="active"><a href="#">Home</a></li>
             <li><a href="note-center">Note Center</a></li>
             <li><a href="articles">Articles</a></li>
-            <li><a href="sample-code">Sample Code</a></li>
+            <li><a href="students">Students</a></li>
             <li><a href="contact-me">Contact Me</a></li>
         </ul>
     </div>
